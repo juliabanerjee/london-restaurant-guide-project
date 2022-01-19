@@ -1,13 +1,15 @@
 import './App.scss';
+import "./assets/styles/base/_reset.scss"
 import CardList from './components/CardList/CardList';
-import RestaurantCard from './components/RestaurantCard/RestaurantCard';
+
 
 
 
 function App() {
   return (
     <div>
-<RestaurantCard/>
+      <h1>London Restaurant Guide</h1>
+<CardList/>
     </div>
   );
 }

@@ -1,7 +1,25 @@
+@use "../../assets/styles/base/typography" as *;
 //mobile
-
-.restaurant-card{
+.restaurant-card {
   border: 1px solid black;
+  height: 70vh;
   width: 80vw;
-  
+
+  &__section1 {
+    height: 30vh;
+    text-align: center;
+    margin-top: 1rem;
+    &__section1:first-child{
+        font-family: $header-font;
+    }
+  }
+
+  &__info {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    height: 40vh;
+    width: 80vw;
+    text-align: center;
+  }
 }
